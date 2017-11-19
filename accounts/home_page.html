@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<title>datalyse</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://static.pexels.com/photos/241544/pexels-photo-241544.jpeg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">crystall ball</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" ">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-center w3-jumbo w3-hide-small">Why risk your data's security?</span><br>
+    <span class="w3-center w3-xxlarge w3-hide-large w3-hide-medium">your data analyst is always with you.</span><br>
+    <span class="w3-center w3-xlarge w3-hide-small">We don't need your data to answer your predictive questions</span><br>
+    <span class="w3-center w3-xxlarge w3-hide-large w3-hide-medium">get sub-second results anytime, anywhere.</span><br>
+    <span class="w3-center w3-large">get sub-second results anytime, anywhere. no more waiting for the analysis reports</span>
+    <p><a href="#about" class="w3-center w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">know more</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">why "Personal Analyst"</h3>
+  <p class="w3-center w3-large">quick results,no maintainance worries and accuracy at its best.</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">effecient</p>
+      <p>We value your time a lot and hence we exist. It's time to change the perception that data analytics need time for processings. Ask for the reports and get them within a second.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">loyal</p>
+      <p>your data is absolutely confidential and we respect that. We wont compramise in this aspect. Our loyalty can be trusted.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>We design unique and perfect set of tools  for your data, and using them is as easy as pie. You will enjoy playing with your data, and the results will be amazing and We kepp working for making this better and better.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p> You can not only use the CB anythime, but you can also get the support 24/7. All your problems will be resolved quickest.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-black w3-padding-64">
+  <p class="w3-center w3-xxlarge">Components</p>
+
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">desktop app</span>
+    <br>for warehousing,cleaning and storing
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">website</span>
+    <br>questions are asked here
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">model hashing</span>
+    <br>predictive model evaluated by our app is stored in hashed form
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">results</span>
+    <br>Graphical and statemental results as per the queries
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK experience</h3>
+  <p class="w3-center w3-large">happy users of our platform</p>
+
+  <!-- <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div> -->
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who work for you on this</p>
+  <div class="w3-row-padding w3-light-grey" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="https://scontent.fccu4-1.fna.fbcdn.net/v/t1.0-9/13177644_941790289252553_1034460751580110106_n.jpg?oh=238681d2ebc825abb9517356754a746a&oe=5A9777C3" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Prithvi Sai Kavuri</h3>
+          <p class="w3-opacity">Predictive modelling,hashing and desktop app </p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/21272315_1511229622275843_555521105035321895_n.jpg?oh=07ab5baa211293ae65b0b6b1666ba715&oe=5A9011F0" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Praveen Suthar</h3>
+          <p class="w3-opacity">user interface and desktop app</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/22045984_1442247495895502_8983112296614573905_n.jpg?oh=3275e2d2b5b1272753bdcb27ea3b0cd1&oe=5AA8CF19" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Akhil Nagubandi</h3>
+          <p class="w3-opacity">all html, css and js</p>
+          
+        </div>
+      </div>
+    </div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/17021_194001287599739_1780267742067045351_n.jpg?oh=cbe798fe8d194dadf7af6439e197ee70&oe=5A903856" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Sachin Vadlakonda</h3>
+          <p class="w3-opacity">Django Back-end</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/12345555_1525888904403394_1542368714052399669_n.jpg?oh=63026fd9a4f8d89a0d95cd5738839d20&oe=5AA8EABD" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Manoj satya gali</h3>
+          <p class="w3-opacity">predictive modelling ,hashing and desktop app</p>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/12311328_447665912107810_2128532971072597592_n.jpg?oh=f327c3089f0fee186e621670d036b588&oe=5A95346E" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Santosh Vardhan</h3>
+          <p class="w3-opacity">user interface and in-site navigation</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-black" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div>
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-center"></i> Hyderabad, India</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-center"></i> Phone: +919494081718, +919834548969</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-center"> </i> Email: prithvisaik@mail.com</p>
+      <br>
+      <form   method="POST" enctype="text" target="_blank">
+        {% csrf_token %}
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-light-grey" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>website maintained by Pithvi Sai Kavuri</p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<script type="text/javascript">
+      $(document).on('submit','#contact',function(e){
+            
+            e.preventDefault();
+            $.ajax({
+                 type:'POST',
+                 url:'/home/contact/',
+                 data:{
+                  Name:$('#Name').val();
+                  Email:$('#Email').val();
+                  Subject:$('#Subject').val();
+                  Message:$('#Message').val();
+                 }
+                 sucess:function(){
+
+                 }
+            })
+       });
+</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

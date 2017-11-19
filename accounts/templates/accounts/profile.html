@@ -1,0 +1,94 @@
+
+<html>
+<head>
+
+<title>Profile</title>
+    <style>
+div {
+    width: 400px;
+
+    border: 5px solid black;
+background-color:white;
+    padding: 25px;
+    margin: 25px;
+}
+body {
+background-image:url("https://i1.wp.com/www.analyticsjedi.com/wp-content/uploads/2017/06/Depositphotos_58348499_original.jpg?fit=6300%2C4600&ssl=1");
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.img {
+background-image:url("{{user.userprofile.imglink}}");
+background-color:white;
+    background-repeat:no-repeat;
+    background-size:100%;
+     width:300px;
+        height:220px;
+}
+    </style>
+</head>
+<body>
+<center>
+    <h1>Profile</h1>
+    <table>
+        <tr>
+            <td>
+    <div class="img">
+
+</div></td>
+            <td>
+<div>
+
+
+    <table>
+        <tr>
+        <td>Username:</td>
+            <td></td>
+        <td>{{ user }}</td>
+        </tr>
+        <tr>
+        <td>First name: </td>
+            <td></td>
+        <td>{{ user.first_name }}</td>
+        </tr>
+        <tr>
+            <td>Last name:</td>
+            <td></td>
+            <td>{{ user.last_name }}</td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td></td>
+            <td>{{ user.email }}</td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td></td>
+            <td>{{ user.userprofile.description }}</td>
+        </tr>
+        <tr>
+            <td>Phone: </td>
+            <td></td>
+            <td>{{ user.userprofile.phone }}</td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td></td>
+            <td>{{ user.userprofile.city }}</td>
+        </tr>
+        <tr>
+            <td>Website:</td>
+            <td></td>
+            <td> {{ user.userprofile.website }}</td>
+        </tr>
+
+
+    </table>
+
+</div></td>
+        </tr>
+        </table>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{% extends 'accounts/base.html'%}
+{% block body1 %}
+<ul>
+
+<li><a href="{% url 'accounts:profile' %}">PROFILE</a></li>
+<li><a href="{% url 'accounts:logout'%}">LOGOUT</a></li>
+    </ul>
+  <center><div class = "One" id="OneDiv"><b><span>want to see your data sets?</span></b>
+            <div class = "OneA"><p>&thinsp;{{user.userprofile.columns}}</p></div></div><br><br></center>
+
+<div class="hai">
+<center><h1>Start typing your query values here...</h1>
+    <form method="post" name="login" >
+       {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit" >Submit</button>
+    </form>
+
+<h2>{{x}}</h2></center>
+</div>
+
+{% endblock %}

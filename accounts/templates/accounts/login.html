@@ -1,0 +1,26 @@
+{% extends 'accounts/base.html' %}
+
+
+{% block head%}
+<title>LOGIN</title>
+{% endblock %}
+{% block head1 %}
+ background-image:url("https://marketingland.com/wp-content/ml-loads/2014/10/crystal-ball-ss-1920.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
+{% endblock %}
+{% block body %}
+
+ <div class="login">
+<h1>welcome</h1>
+<h2>login</h2>
+
+<form method="post">
+    {%csrf_token %}
+    {{form.as_p}}
+    <button type="submit"  >login</button>
+
+</form>
+        </div>
+
+{% endblock %}

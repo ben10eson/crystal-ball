@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>
+    Welcome
+    </title>
+<style>
+body {
+background-image:url('https://i.warosu.org/data/tg/img/0428/53/1443831964143.jpg');
+}
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 75px;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+</style>
+</head>
+<body>
+<div>
+<ul>
+
+<li><a href="{% url 'accounts:profile' %}">profile</a></li>
+    </ul>
+</div>
+<div align="center">
+    <form action="{% url 'accounts:data' %}" method="post">
+        {% csrf_token %}
+<table>
+    <tr>
+        <td>
+        <input type="text" name="search" placeholder="type here">
+        </td>
+        <td><button type="submit" value="submit" >search</button> </td>
+    </tr>
+</table>
+        </form>
+</div>
+
+
+<div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Add a New Song</h3>
+                    {% if error_message %}
+                        <p><strong>{{ error_message }}</strong></p>
+                    {% endif %}
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form }}
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+</div>
+</body>
+</html>
+<!--onclick="window.location.href='{% url 'accounts:data' %}'"-->

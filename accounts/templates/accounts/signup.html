@@ -1,0 +1,18 @@
+{% extends 'accounts/base.html' %}
+{% block head%}
+<title>Register</title>
+{% endblock %}
+{% block body1 %}
+{% endblock %}
+{% block body %}
+
+<div class="register">
+  <center><h2>Sign up</h2></center>
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+<button type="submit">let's join </button>
+</form>
+    </div>
+{% endblock %}
